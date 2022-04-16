@@ -2,7 +2,7 @@ package com.tns.scannerprgms;
 
 import java.util.Scanner;
 
-public class Main {
+public class Studentdetails {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
