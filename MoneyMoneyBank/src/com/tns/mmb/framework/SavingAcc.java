@@ -4,7 +4,7 @@ public abstract class SavingAcc extends BankAcc {
 	
 	private boolean isSalary;
 	
-	private static final float MINBAL=500;
+	private static final float MINBAL =500;
 
 	 
 	public SavingAcc(int accNo, String accNm, float accBal, boolean isSalary) {
@@ -13,12 +13,14 @@ public abstract class SavingAcc extends BankAcc {
 	}
 
 	public void withdraw(float accBal) {
+		System.out.println("Balance is: "+accBal);
 			
 		}
 
 	@Override
 	public String toString() {
-		return "SavingAcc [isSalary=" + isSalary + "]";
+		return "SavingAcc [isSalary=" + isSalary + ", toString()=" + super.toString() + ", getClass()=\" + getClass()"
+				+ "+ , hashCode()=" + hashCode() + "]";
 	}
 	
  

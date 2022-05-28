@@ -4,13 +4,16 @@ import com.tns.mmb.framework.BankFactory;
 import com.tns.mmb.framework.CurrentAcc;
 import com.tns.mmb.framework.SavingAcc;
 
-public abstract class MMBankFactory extends BankFactory{
+public class MMBankFactory extends BankFactory{
 	
 	public SavingAcc getNewSavingAccount(int AccNo,String accNm,float accBal,boolean isSalary) {
-		return null;
+		MMSavingAcc mmsaving = new MMSavingAcc(AccNo, accNm, accBal, isSalary);
+		return mmsaving;
+	
 	}
 	public CurrentAcc getNewCurrentAccount(int AccNo,String accNm,float accBal,float creditLimit) {
-		return null;
+		MMCurrentAcc mmcurrent = new MMCurrentAcc(AccNo, accNm, creditLimit,creditLimit );
+		return mmcurrent;
 	}
 
 	
